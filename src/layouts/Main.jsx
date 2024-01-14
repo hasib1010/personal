@@ -1,15 +1,21 @@
 
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import Header from './Header';
+import Header from './Navbar';
 import Footer from './Footer';
 
 const Main = () => {
+    const theme = localStorage.getItem("theme");
+
     return (
         <>
-            <Header />
-            <Outlet />
-            <Footer />
+            <div className='container mx-auto'>
+
+                <Header />
+                <Outlet />
+                <Footer />
+            </div>
+
         </>
     );
 };

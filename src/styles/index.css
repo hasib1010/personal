@@ -2,7 +2,131 @@
 @tailwind components;
 @tailwind utilities;
 
-/* *** Global Style goes Here *** */
-/* body {
-	font-family: 'Poppins', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+ 
+
+* {
+	font-family: 'Fira Code', monospace;
+
+
+	 
+	 
+}
+
+
+
+.header {
+	width: fit-content;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 10rem;
+	margin-top: 5px;
+	line-height: 0.975;
+	background: linear-gradient(to left, #feac5e, #c779d0, #4bc0c8);
+	background-size: 200% 200%;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation-duration: 3s;
+	animation-delay: 1s;
+	animation-name: color-change;
+	animation-fill-mode: forwards;
+}
+
+@keyframes color-change {
+	from {
+		background-position: 0 0;
+	}
+
+	to {
+		background-position: 100% 0;
+	}
+}
+
+.sub {
+	width: 100%;
+	text-align: center;
+	margin-top: 150px;
+	font-size: 50px;
+	color: rgb(0, 0, 0);
+}
+
+@keyframes intro {
+	from {
+		height: 100%;
+	}
+
+	to {
+		height: 300px;
+	}
+}
+
+.dp {
+	background-image: url("/src/assets/dp.jpg");
+	height: 300px;
+	width: 300px;
+	background-size: cover;
+	background-position: center center;
+	filter: grayscale();
+	box-shadow: 0px 5px 10px 10px rgba(23, 21, 21, 0.5);
+	animation-name: animate;
+	animation: animate 5s ease-in-out infinite;
+	transition: all 1s ease-in-out;
+}
+
+@keyframes animate {
+
+	0%,
+	100% {
+		border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+	}
+
+	50% {
+		border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+	}
+}
+
+.dp:hover {
+	filter: none;
+	box-shadow: none;
+}
+
+/* .bio {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 90px;
+	align-items: center;
 } */
+
+.bio-head {
+	font-size: 50px;
+}
+.upper{
+	position: sticky;
+	top: calc(50%-100px);
+}
+
+.nav {
+	 
+	padding-top: 30px;
+	padding-bottom: 10px;
+	display: flex;
+	justify-content: end; 
+	font-size: 20px;
+	margin-bottom: 100px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.active {
+	color: red;
+}
+
+.navLinks {
+	display: flex;
+	justify-content: space-around;
+	gap: 20px;
+}
