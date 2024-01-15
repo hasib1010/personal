@@ -9,12 +9,14 @@ const Main = () => {
 
     return (
         <>
-            <div className='container mx-auto'>
-
+          
+        
                 <Header />
-                <Outlet />
+               <div className='min-h-[700px]'>
+               <Outlet />
+               </div>
                 <Footer />
-            </div>
+            
 
         </>
     );

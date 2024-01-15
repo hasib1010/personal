@@ -2,20 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
-    // const [theme, setTheme] = useState(localStorage.getItem("theme") ? localStorage.getItem('theme') : "light");
-    // useEffect(() => {
-    //     localStorage.setItem("theme", theme);
-    //     const localtheme = localStorage.getItem("theme");
-    //     document.querySelector("html").setAttribute("data-theme", theme);
-    // }, [theme]);
-    // const handleToggle = (e) => {
-    //     if (e.target.checked) {
-    //         setTheme("dark");
-    //         // document.querySelector("body").setAttribute("class","text-white")
-    //     } else {
-    //         setTheme("light")
-    //     }
-    // }
+
     const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
 
     useEffect(() => {
@@ -33,7 +20,7 @@ const Navbar = () => {
     };
 
     return (
-        <div className='nav '>
+        <div className='nav container mx-auto'>
 
             <div> <p className=''></p>
             </div>

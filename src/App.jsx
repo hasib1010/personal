@@ -1,10 +1,14 @@
-import { RouterProvider } from 'react-router-dom'
+import { RouterProvider, useLocation } from 'react-router-dom'
 import routes from './routes/routes'
 
-function App() {
+import { AnimatePresence } from 'framer-motion'
+
+function App() { 
   return (
     <>
-      <RouterProvider router={ routes } />
+      <AnimatePresence>
+        <RouterProvider key={routes.pathname} router={routes}  />
+        </AnimatePresence>
     </>
   )
 }

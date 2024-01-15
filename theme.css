@@ -2,6 +2,16 @@
     color:  black !important; 
     /* background: greenyellow; */
 }
+.light .btx .highlight{
+    color:rgb(255, 11, 11) !important;
+    font-weight: bold
+}
 .dark{
     color:white !important;
+}
+.dark .btx{
+    color:white !important;
+}
+.dark .btx .highlight{
+    color:rgb(254, 225, 76) !important;
 }
