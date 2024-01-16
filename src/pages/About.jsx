@@ -8,7 +8,7 @@ const About = () => {
         <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 2.75, ease: "easeOut" }}
+            transition={{ duration: .75, ease: "easeOut" }}
             exit={{ opacity: 0 }}
         >
             <div className=' container mx-auto'>
