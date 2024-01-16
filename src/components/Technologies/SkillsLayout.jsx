@@ -10,10 +10,11 @@ import js from './../../assets/logos/js.png'
 import next from './../../assets/logos/next.png'
 import reactIcon from './../../assets/logos/react.png'
 import tailwind from './../../assets/logos/tailwind.png'
+import npm from './../../assets/logos/npm.png'
 const SkillsLayout = ({ img }) => {
     return (
         <Marquee speed={130}>
-            <div className='grid grid-cols-10 gap-14'>
+            <div className='grid grid-cols-11 gap-11'>
                 <img className='w-24 ' src={html}/>
                 <img className='w-24 ' src={css}/>
                 <img className='w-24 ' src={boot}/>
@@ -24,7 +25,7 @@ const SkillsLayout = ({ img }) => {
                 <img className='w-24 ' src={fire}/>
                 <img className='w-24 ' src={next}/>
                 <img className='w-24 ' src={git}/>
-                <img className='w-24 ' src="" alt="" />
+                <img className='w-24 ' src={npm} alt="" />
 
             </div>
         </Marquee>

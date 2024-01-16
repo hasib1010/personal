@@ -3,7 +3,7 @@ import React from 'react';
 const Career = () => {
     return (
         <div>
-            <h2 className='text-6xl text-center my-20 font-bold'>Career Objective</h2>
+            <h2 className='text-4xl text-center my-20 font-bold'>Career Objective</h2>
              
             <p className='btx w-2/3 mx-auto text-xl text-orange-800'>As a results-driven front-end developer specializing in JavaScript, React, Tailwind CSS, Firebase, and Next.js, I am on a mission to engineer seamless and performant web applications. With a focus on creating modern, responsive, and visually appealing user interfaces, I leverage my expertise to deliver cutting-edge digital experiences. <br /><br />
 

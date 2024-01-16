@@ -130,3 +130,7 @@ a {
 	justify-content: space-around;
 	gap: 20px;
 }
+
+body .react-bubbly-transitions__bubbly-link {
+ font-size: 20px;
+}

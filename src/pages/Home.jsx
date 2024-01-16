@@ -11,7 +11,7 @@ const Home = () => {
         <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{duration: 0.75, ease: "easeOut" }}
+            transition={{duration: 2.75, ease: "easeOut" }}
             exit={{ opacity: 0 }}
         >
 
