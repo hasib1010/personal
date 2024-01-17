@@ -4,21 +4,24 @@ import Bio from '../components/Bio/Bio';
 import Skills from '../components/Technologies/Skills';
 import Career from '../components/Career/Career';
 
-import { motion } from "framer-motion" 
+import { motion } from "framer-motion"
 const Home = () => {
 
     return (
         <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{duration: .75, ease: "easeOut" }}
+            transition={{ duration: .75, ease: "easeOut" }}
             exit={{ opacity: 0 }}
-        > 
+        >
 
 
             <div className='container mx-auto z-10'>
-               
-                <Header></Header> 
+
+                <Header></Header>
+                <div className='coding  lg:block md:block hidden   absolute top-12 left-96'>
+
+                </div>
                 <Bio></Bio>
                 <Career></Career>
                 <Skills></Skills>

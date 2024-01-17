@@ -1,6 +1,6 @@
 .light{
     color:  black !important; 
-    background-image: url('/public/pattern-randomized.svg');
+    /* background-image: url('/public/pattern-randomized.svg'); */
 }
 .light .btx .highlight{
     color:rgb(255, 11, 11) !important;
@@ -8,8 +8,10 @@
 }
 .dark{
     color:white !important;
-    background-image: url('./public/abstract-timekeeper.svg');
+    /* background-image: url('/src/assets/wallpapersden.com_starry-sky-hd-dark-blue-night_2912x1632.jpg'); */
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .dark .btx{
     color:white !important;
@@ -22,20 +24,11 @@
  .dark .coding{
   background-image: url("https://cdn.dribbble.com/users/2571505/screenshots/14197653/media/324034b1707825a543f520a98d30fdf2.gif");
   background-size: cover;
-  height: 300px;
-  width: 350px;
+  height: 250px;
+  width: 250px;
   background-position: center;
-  border-radius: 10%;
-  z-index: -1;
+  border-radius: 100%;
+  background-position-y: 15px;
+  z-index: -1; 
  }
- .light .coding{
-  background-image: url("https://i.pinimg.com/originals/4f/05/95/4f0595b0e1421428a053ff7aea868424.gif");
-  background-size: cover;
-  height: 300px;
-  width: 350px;
-  background-position: center;
-  border-radius: 10%;
-  z-index: -1;
- }
-
   
