@@ -9,15 +9,17 @@ const Main = () => {
 
     return (
         <>
-          
-        
-                <Header />
-               <div className='min-h-[700px]'>
-               <Outlet />
-               </div>
-                <Footer />
-            
+            <div className='relative'>
+            <div className='coding     absolute top-2 left-64'>
+                   
+            </div>
 
+                <Header />
+                <div className='min-h-[700px]'>
+                    <Outlet />
+                </div>
+                <Footer />
+            </div>
         </>
     );
 };

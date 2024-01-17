@@ -12,7 +12,7 @@ const Projects = () => {
             <div className='container mx-auto'>
                 <h3 className='lg:text-6xl text-2xl font-bold text-center'>My Recent Projects</h3>
 
-                <div className='my-20 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10'>
+                <div className='my-20 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-20'>
 
                     <div className="p-10 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 bg-base-300 shadow-xl w-full rounded-lg">
                         <figure className="px-10 pt-10">
@@ -127,9 +127,9 @@ const Projects = () => {
                         <div className="  ">
                             <h2 className="text-center font-bold text-2xl text-blue-500">Video Sharing JS Project </h2>
                             <div className='ml-4'>  <strong className='text-start'>Features: </strong>
-                                <li className='font-semibold  pl-6 items-center mt-2 text-sm'>OnClick Add Product in Cart</li>
-                                <li className='font-semibold pl-6 items-center mt-2 text-sm'>If Total price is more than 200 the COUPON can be applied</li>
-                                <li className='font-semibold pl-6 items-center mt-2 text-sm mb-2 '>After APPLY the coupon it will give 20% Discount  </li>
+                                <li className='font-semibold  pl-6 items-center mt-2 text-sm'>Responsive to Mobile, Tablet and PC</li>
+                                <li className='font-semibold pl-6 items-center mt-2 text-sm'>OnClick Nav Category Name it displays category's data</li>
+                                <li className='font-semibold pl-6 items-center mt-2 text-sm mb-2 '>Sort by View is able to re-order Data by View Count  </li>
                             </div>
 
                             <div className="flex lg:justify-around justify-between gap-3 mt-10">

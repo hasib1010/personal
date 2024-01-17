@@ -1,6 +1,6 @@
 .light{
     color:  black !important; 
-    /* background: greenyellow; */
+    background-image: url('/public/pattern-randomized.svg');
 }
 .light .btx .highlight{
     color:rgb(255, 11, 11) !important;
@@ -8,6 +8,8 @@
 }
 .dark{
     color:white !important;
+    background-image: url('./public/abstract-timekeeper.svg');
+    background-size: cover;
 }
 .dark .btx{
     color:white !important;
@@ -15,3 +17,25 @@
 .dark .btx .highlight{
     color:rgb(254, 225, 76) !important;
 }
+
+
+ .dark .coding{
+  background-image: url("https://cdn.dribbble.com/users/2571505/screenshots/14197653/media/324034b1707825a543f520a98d30fdf2.gif");
+  background-size: cover;
+  height: 300px;
+  width: 350px;
+  background-position: center;
+  border-radius: 10%;
+  z-index: -1;
+ }
+ .light .coding{
+  background-image: url("https://i.pinimg.com/originals/4f/05/95/4f0595b0e1421428a053ff7aea868424.gif");
+  background-size: cover;
+  height: 300px;
+  width: 350px;
+  background-position: center;
+  border-radius: 10%;
+  z-index: -1;
+ }
+
+  

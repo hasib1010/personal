@@ -134,3 +134,7 @@ a {
 body .react-bubbly-transitions__bubbly-link {
  font-size: 20px;
 }
+ 
+.parallax-container {
+	overflow: hidden;
+  }
