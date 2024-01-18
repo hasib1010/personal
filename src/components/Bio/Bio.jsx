@@ -6,14 +6,14 @@ const Bio = () => {
     return (
         <div className='bio '>
          <div className='flex lg:flex-row md:flex-row flex-col gap-8 justify-between my-20 items-center'>
-         <div className='bio-txt'>
-                <h2 className='bio-head'>Web Developer.
-                    <span>
-                    </span>
-                </h2>
-                <div >
+         <h2 className='bio-head'>Web Developer.
+         <div className=''>
                     <Typeanimations></Typeanimations>
-                </div>
+                </div> 
+                </h2>
+         <div className='bio-txt'>
+                
+                
             </div>
             <div className='dp'>
 

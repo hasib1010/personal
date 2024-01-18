@@ -18,7 +18,7 @@ const Typeanimations = () => {
                 ]}
                 wrapper="span"
                 speed={50}
-                style={{ fontSize: '1.5em', display: 'inline-block' }}
+                style={{ fontSize: '20px', display: 'flex' }}
                 repeat={Infinity}
             />
         </div>

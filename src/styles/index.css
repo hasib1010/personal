@@ -4,17 +4,34 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
 
- 
+
 
 * {
 	font-family: 'Fira Code', monospace;
 
 
-	 
-	 
+
+
 }
 
+@media (max-width: 768px) {
+	.header  {
+	 
+		font-size: 50px !important;  
+	}
+	.bio-head {
+		font-size: 30px !important;
+		margin-left: 0;padding-left: 0;
+		text-align: start !important;
+	}
 
+	.dp {
+		 
+		height: 200px !important;
+		width: 200px !important;
+		 
+	}
+}
 
 .header {
 	width: fit-content;
@@ -102,17 +119,18 @@
 .bio-head {
 	font-size: 50px;
 }
-.upper{
+
+.upper {
 	position: sticky;
 	top: calc(50%-100px);
 }
 
 .nav {
-	 
+
 	padding-top: 30px;
 	padding-bottom: 10px;
 	display: flex;
-	justify-content: end; 
+	justify-content: end;
 	font-size: 20px;
 	margin-bottom: 100px;
 }
@@ -132,9 +150,9 @@ a {
 }
 
 body .react-bubbly-transitions__bubbly-link {
- font-size: 20px;
+	font-size: 20px;
 }
- 
+
 .parallax-container {
 	overflow: hidden;
-  }
+}

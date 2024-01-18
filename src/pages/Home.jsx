@@ -20,7 +20,6 @@ const Home = () => {
 
                 <Header></Header>
                 <div className='coding  lg:block md:block hidden   absolute top-12 left-96'>
-
                 </div>
                 <Bio></Bio>
                 <Career></Career>

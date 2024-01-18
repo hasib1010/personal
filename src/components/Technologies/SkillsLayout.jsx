@@ -14,18 +14,18 @@ import npm from './../../assets/logos/npm.png'
 const SkillsLayout = ({ img }) => {
     return (
         <Marquee speed={130}>
-            <div className='grid grid-cols-11 gap-11'>
-                <img className='w-24 ' src={html}/>
-                <img className='w-24 ' src={css}/>
-                <img className='w-24 ' src={boot}/>
-                <img className='w-24 ' src={tailwind}/>
-                <img className='w-24 ' src={js}/>
-                <img className='w-24 ' src={reactIcon}/>
-                <img className='w-24 ' src={fig}/>
-                <img className='w-24 ' src={fire}/>
-                <img className='w-24 ' src={next}/>
-                <img className='w-24 ' src={git}/>
-                <img className='w-24 ' src={npm} alt="" />
+            <div className='grid my-5 grid-cols-11 gap-11'>
+                <img className='lg:w-24 w-10 ' src={html}/>
+                <img className='lg:w-24 w-10 ' src={css}/>
+                <img className='lg:w-24 w-10 ' src={boot}/>
+                <img className='lg:w-24 w-10 ' src={tailwind}/>
+                <img className='lg:w-24 w-10 ' src={js}/>
+                <img className='lg:w-24 w-10 ' src={reactIcon}/>
+                <img className='lg:w-24 w-10 ' src={fig}/>
+                <img className='lg:w-24 w-10 ' src={fire}/>
+                <img className='lg:w-24 w-10 ' src={next}/>
+                <img className='lg:w-24 w-10 ' src={git}/>
+                <img className='lg:w-24 w-10 ' src={npm} alt="" />
 
             </div>
         </Marquee>
