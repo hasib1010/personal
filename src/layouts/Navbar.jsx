@@ -1,51 +1,112 @@
 import React, { useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import { Menu, X, Sun, Moon } from 'lucide-react';
 
 const Navbar = () => {
-
     const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
+    const [isOpen, setIsOpen] = useState(false);
 
     useEffect(() => {
         localStorage.setItem("theme", theme);
         document.querySelector("html").setAttribute("data-theme", theme);
         document.querySelector("html").setAttribute("class", theme);
-        
     }, [theme]);
 
-    const handleToggle = (e) => {
-        if (e.target.checked) {
-            setTheme("dark");
-        } else {
-            setTheme("light");
-        }
+    const handleToggle = () => {
+        setTheme(prev => prev === "dark" ? "light" : "dark");
     };
 
+    const navLinks = [
+        { path: '/', label: 'Home' },
+        { path: '/about', label: 'About me' },
+        { path: '/projects', label: 'Projects' }
+    ];
+
     return (
-        <div className='flex lg:justify-between md:justify-around justify-center  my-10 container mx-auto'>
+        <>
+            <nav className="fixed top-0 left-0 right-0 bg-white dark:bg-gray-900 shadow-md z-50">
+                <div className="container mx-auto px-4">
+                    <div className="flex items-center justify-between h-16">
+                        <div className="flex-shrink-0">
+                            <Link to={'/'}>  <h1 className="text-2xl font-bold text-gray-800 dark:text-white">HASIB</h1></Link>
+                        </div>
 
-            <div>  
-            </div>
+                        <div className="hidden md:flex items-center space-x-8">
+                            {navLinks.map(({ path, label }) => (
+                                <NavLink
+                                    key={path}
+                                    to={path}
+                                    className={({ isActive }) =>
+                                        `text-lg transition-colors duration-200 ${isActive
+                                            ? 'text-blue-600 dark:text-blue-400'
+                                            : 'text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400'
+                                        }`
+                                    }
+                                >
+                                    {label}
+                                </NavLink>
+                            ))}
 
+                            <button
+                                onClick={handleToggle}
+                                className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200"
+                            >
+                                {theme === 'dark' ? (
+                                    <Sun className="w-5 h-5 text-gray-600 dark:text-gray-300" />
+                                ) : (
+                                    <Moon className="w-5 h-5 text-gray-600 dark:text-gray-300" />
+                                )}
+                            </button>
+                        </div>
 
-            <div className='navLinks flex lg:flex-row md:flex-row flex-col text-2xl  items-center'>
+                        <div className="md:hidden flex items-center">
+                            <button
+                                onClick={handleToggle}
+                                className="p-2 mr-2 rounded-lg bg-gray-100 dark:bg-gray-800"
+                            >
+                                {theme === 'dark' ? (
+                                    <Sun className="w-5 h-5 text-gray-600 dark:text-gray-300" />
+                                ) : (
+                                    <Moon className="w-5 h-5 text-gray-600 dark:text-gray-300" />
+                                )}
+                            </button>
 
-                <label className="flex cursor-pointer gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="5" /><path d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4" /></svg>
+                            <button
+                                onClick={() => setIsOpen(!isOpen)}
+                                className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700"
+                            >
+                                {isOpen ? (
+                                    <X className="w-6 h-6 text-gray-600 dark:text-gray-300" />
+                                ) : (
+                                    <Menu className="w-6 h-6 text-gray-600 dark:text-gray-300" />
+                                )}
+                            </button>
+                        </div>
+                    </div>
 
-                    <input type="checkbox" checked={theme=== "dark"} value="synthwave" className="toggle theme-controller" onChange={handleToggle} />
-
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-                </label>
-
-                <NavLink to={'/'}>Home</NavLink>
-                <NavLink to={'/about'}>About me</NavLink>
-                <NavLink to={'/projects'}>Projects</NavLink>
-            </div>
-
-
-
-
-        </div>
+                    {isOpen && (
+                        <div className="md:hidden pb-4">
+                            {navLinks.map(({ path, label }) => (
+                                <NavLink
+                                    key={path}
+                                    to={path}
+                                    onClick={() => setIsOpen(false)}
+                                    className={({ isActive }) =>
+                                        `block px-4 py-2 text-lg ${isActive
+                                            ? 'text-blue-600 dark:text-blue-400 bg-gray-100 dark:bg-gray-800'
+                                            : 'text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800'
+                                        }`
+                                    }
+                                >
+                                    {label}
+                                </NavLink>
+                            ))}
+                        </div>
+                    )}
+                </div>
+            </nav>
+            <div className="h-16"></div> {/* Spacer div to prevent content overlap */}
+        </>
     );
 };
 

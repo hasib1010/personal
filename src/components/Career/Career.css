@@ -1,0 +1,61 @@
+/* Career.css */
+.career-container {
+    display: flex;
+    position: relative;
+    padding-top: 100px; /* To give space for the progress bar */
+    padding-left: 100px; /* Space for the vertical progress bar */
+    height: 2000px; /* Ensure there's enough scrolling space */
+  }
+  
+  .vertical-line {
+    position: fixed;
+    top: 0;
+    left: 10%;
+    width: 4px;
+    background-color: #ccc;
+    height: 100%;
+  }
+  
+  .scroll-progress-bar {
+    background-color: #007bff;
+    width: 100%;
+    transition: height 0.1s ease-out;
+  }
+  
+  .content {
+    margin-left: 150px;
+    max-width: 800px;
+  }
+  
+  .section {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    margin-bottom: 50px;
+    padding: 20px;
+    background: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section.visible {
+    opacity: 1;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin: 10px 0;
+  }
+  
+  p {
+    margin: 10px 0;
+  }
+  

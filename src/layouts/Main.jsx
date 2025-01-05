@@ -10,7 +10,7 @@ const Main = () => {
     return (
         <>
             <div className='relative'>
-            
+
 
                 <Header />
                 <div className='min-h-[700px]'>

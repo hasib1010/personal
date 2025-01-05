@@ -18,9 +18,7 @@ const Home = () => {
 
             <div className='container mx-auto z-10'>
 
-                <Header></Header>
-                <div className='coding  lg:block md:block hidden   absolute top-12 left-96'>
-                </div>
+                <Header></Header> 
                 <Bio></Bio>
                 <Career></Career>
                 <Skills></Skills>
